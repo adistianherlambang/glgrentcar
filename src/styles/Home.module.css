@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --paragraphColor: #BCBCBC;
-  --paragraphSize: 1rem;
-}
-
 @import "~aos/dist/aos.css";
 
 @media (prefers-color-scheme: dark) {
@@ -23,8 +16,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: #171717;
+  background: #171717;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Montserrat', sans-serif;
@@ -158,7 +151,7 @@ a {
 .paragraph {
   text-align: justify;
   text-align-last: center;
-  color: var(--paragraph-color);
+  color: #BCBCBC;
 }
 
 .title3 {

@@ -35,12 +35,12 @@
 }
 
 .paragraph {
-    color: var(--paragraphColor);
+    color: #BCBCBC;
     font-size: 1rem;
 }
 
 .leftparagraph {
-    color: var(--paragraphColor);
+    color: #BCBCBC;
     text-align: justify;
     font-size: 1rem;
     margin-bottom: 24px;
@@ -76,7 +76,7 @@
 }
 
 .linkParagraph {
-    color: var(--paragraphColor);
+    color: #BCBCBC;
     transition: 300ms ease-in;
 }
 

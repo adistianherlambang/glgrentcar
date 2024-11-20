@@ -103,7 +103,7 @@
 .paragraph {
   text-align: justify;
   text-align-last: center;
-  color: var(--paragraph-color);
+  color: #BCBCBC;
 }
 
 .title3 {
