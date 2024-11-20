@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import React from "react";
 import Navbar from "@/components/nav";
 import Link from "next/link";
-import '@/styles/global.css';  
+import '@/styles/globals.css';  
 
 export default function Home() {
 
