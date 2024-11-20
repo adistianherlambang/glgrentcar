@@ -26,7 +26,8 @@
 }
 
 .headerButton {
-  margin-top: 36px;
+  width: fit-content;
+  margin-top: 2rem;
   background-color: #F10806;
   padding: 1rem 2rem;
   border: none;
@@ -371,34 +372,92 @@
 
 }
 
-@media (max-width:600px) {
+@media (max-width:768px) {
+
+  .header {
+    padding: 2rem;
+    padding-top: -10rem;
+  }
+
+  .headerContent {
+    margin-top: -2rem;
+  }
 
   .headerTitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    width: 100%;
   }
 
   .headerDesc {
     width: 100%;
+    opacity: 0.8;
+    font-size: 0.70rem;
+  }
+  
+  .headerButton {
+    background-color: #F10806;
+    padding: 0.65rem 1.5rem;
+    border: none;
+    border-radius: 120px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.65rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .itemPilihan {
+    width: 100%;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    margin-bottom: 7rem;
   }
 
   .title2 {
     font-size: 1.5rem;
-    width: 100%;
+    padding: 0;
   }
 
   .paragraph {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .layananContainer {
+    padding: 0 2rem;
+  }
+
+  .layananTitle {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .layananItemsContainer {
+    margin-bottom: 0rem;
+  }
+
+  .title3 {
+    font-size: 1.25rem;
+  }
+
+  .blogTitle {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
   }
 
   .blogTitleLeft {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    width: 40%;
   }
 
   .blogTitleRight {
     background-color: #F10806;
-    padding: 0 1.5rem;
-    font-size: 0.85rem;
+    padding: 0rem 1.5rem;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.7rem;
+    height: 3rem;
   }
 
   .blog {
@@ -409,29 +468,63 @@
   .blogLeft {
     width: 100%;
     height: 20rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    padding: 1.7rem;
+  }
+
+  .blogLeftCopy {
+    gap: 0.7rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blogLeftCategory {
+    zoom: 0.8;
+  }
+
+  .blogLeftTitle {
+    font-size: 1.85rem;
+  }
+
+  .blogLeftParagraph {
+    font-size: 0.7rem;
+    opacity: 1;
+    color: white;
+  }
+
+  .blogTime {
+    zoom: 0.8;
+    align-self: flex-start;
   }
 
   .blogRightContainer {
     width: 100%;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .blogRightImg {
     width: 20rem;
+    height: 11rem;
+    display: none;
   }
 
   .blogRightTitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .blogRightParagraph {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+  }
+
+  .blogRightCategory{
+    zoom: 0.8;
   }
 
   .blogClock {
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 
   .blogCalendar {
@@ -449,20 +542,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.85rem;
-  }
-
-  .headerButton {
-    margin-top: 36px;
-    background-color: #F10806;
-    padding: 0.65rem 1.5rem;
-    border: none;
-    border-radius: 120px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.65rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
   }
 
   .header {

@@ -11,7 +11,7 @@
 
 .topFooter {
     width: 100%;
-    margin: 4rem 0;
+    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
 }
@@ -115,3 +115,46 @@
     }
     
 }
+
+@media (max-width: 768px){
+    .topFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }   
+    .info {
+        width: 100%;
+        gap: 0.5rem;
+        display: flex;
+    }
+    .addressInfo {
+        width: 100%;
+        gap: 0.85rem;
+    }
+    .title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .addressDetail {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .leftparagraph {
+        font-size: 0.7rem;
+    }
+    .paragraph {
+        font-size: 0.7rem;
+    }
+    .location {
+        width: 90%;
+    }
+    .icon {
+        zoom: 0.8;
+    }
+    .linkParagraph {
+        font-size: 0.7rem;
+    }
+    
+}
+

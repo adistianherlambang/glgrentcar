@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
       <div className={styles.navContainer}>
         <div className={styles.nav}>
           <div className={`${styles.logo} ${isMenuOpen ? styles.hideLogo : ""}`}>
-            <Image src="/assets/logo.png" alt="logo" width={90} height={90} />
+            <Image src="/assets/logo.png" alt="logo" layout="intrinsic" width={90} height={90} />
           </div>
 
           <div

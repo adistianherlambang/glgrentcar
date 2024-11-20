@@ -21,13 +21,13 @@ export default function Footer(){
                         <p className={styles.title}>Address</p>  
                         <div className={styles.addressDetail}>
                             <div className={styles.icon}>
-                                <Image width={30} height={10} layout="intrinsic" className={styles.location} src="/assets/footerAsset/Location.svg" alt="location" />
+                                <Image width={20} height={10} layout="intrinsic" className={styles.location} src="/assets/footerAsset/Location.svg" alt="location" />
                             </div>
                             <p className={styles.paragraph}>Jalan Tirtayasa, Gg Permata No 08, Sukabumi, Bandar Lampung</p>
                         </div>
                         <div className={styles.addressDetail}>
                             <div className={styles.icon}>
-                                <Image width={30} height={10} layout="intrinsic" src="/assets/footerAsset/Call.svg" alt="call" />
+                                <Image width={20} height={10} layout="intrinsic" src="/assets/footerAsset/Call.svg" alt="call" />
                             </div>
                             <p className={styles.paragraph}>+628117212566</p>
                         </div>

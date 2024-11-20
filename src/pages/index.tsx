@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.css";
 import Footer from "@/components/Footer";
 import React from "react";
 import Navbar from "@/components/nav";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -21,7 +22,7 @@ export default function Home() {
           <div className={styles.headerContent}>
             <p className={styles.headerTitle}>Sewa Mobil Terbaik<br />di Lampung</p>
             <p className={styles.headerDesc}>GLG Rentcar adalah penyedia rental mobil terbesar dan terlaris di Lampung dengan armada yang prima serta sopir berpengalaman, menawarkan berbagai jenis mobil dari SUV hingga mobil mewah untuk perjalanan aman dan nyaman di wilayah Lampung serta tujuan lainnya dengan pelayanan terbaik.</p>
-            <button className={styles.headerButton}>Pesan Sekarang<span><Image layout="responsive" width={16} height={9} className={styles.arrow} src="/assets/HomeAsset/arrow.svg" alt="arrow"/></span></button>
+            <Link href="https://wa.me/6285156530873" className={styles.headerButton}>Pesan Sekarang<span><Image layout="responsive" width={16} height={9} className={styles.arrow} src="/assets/HomeAsset/arrow.svg" alt="arrow"/></span></Link>
           </div>
         </div>
         <div data-aos="fade-up" data-aos-once="false" data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="200" className={styles.itemPilihan}>
