@@ -160,7 +160,7 @@
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   overflow: hidden;
 }
 
