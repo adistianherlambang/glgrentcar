@@ -1,0 +1,161 @@
+.armadaContainer {
+    margin: 0 5rem;
+    margin-bottom: 15rem;
+    height: fit-content;
+}
+
+.armadaTitle {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 7.5rem;
+    display: block;
+}
+
+.armadaTitleMob {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 7.5rem;
+    display: none;
+}
+
+.armadaWrapper {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+}
+
+.armada {
+    height: fit-content;
+    width: 25rem;
+    border-radius: 1rem;
+    background-color: rgba(255,255,255, 0.1);
+    border: solid rgba(255,255,255, 0.1) 2px;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: 300ms ease;
+}
+
+.armada:hover {
+    background-color: rgba(255,255,255, 0.1);
+    transform: translateY(-1rem);
+    transition: 300ms ease;
+    border: solid white 2px;
+}
+
+.armada:active {
+    background-color: rgba(255,255,255, 0.1);
+    transform: translateY(-1rem);
+    transition: 300ms ease;
+    border: solid white 2px;
+}
+
+.armadaImgWrapper {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color:red;
+}
+
+.armadaImg {
+    scale: 2rem;
+    background-color: black;
+}
+
+.armadaContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.armadaCategoryWrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.armadaCategory {
+    font-size: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.armadaCar {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.armadaCarDesc {
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+
+    .armadaContainer {
+        margin: 0 3rem 10rem 3rem;
+    }
+    
+    .armadaTitle{
+        font-size: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .armadaWrapper {
+        gap: 3rem;
+    }
+
+    .armada {
+        width: 20rem;
+        padding: 2.5rem 2rem;
+        gap: 1rem;
+    }
+
+    .armadaCar {
+        font-size: 1rem;
+    }
+
+    .armadaCarDesc {
+        font-size: 0.85rem;
+    }
+
+    .armadaCategory {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .armada {
+        width: 19rem;
+        padding: 2.5rem 1.5rem;
+        gap: 1rem;
+    }
+    
+    .armadaContainer {
+        margin: 0 3rem 10rem 3rem;
+    }
+    
+    .armadaTitle{
+        font-size: 2rem;
+        margin-bottom: 5rem;
+        display: none;
+    }
+
+    .armadaImgWrapper {
+        height: 10rem;
+    }
+
+    .armadaTitleMob{
+        font-size: 2rem;
+        margin-bottom: 5rem;
+        display: block;
+    }
+
+}

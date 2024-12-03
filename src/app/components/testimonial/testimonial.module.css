@@ -1,0 +1,129 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 100vw));
+  }
+}
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.titleContainer {
+  margin-bottom: 7.5rem;
+}
+
+.container {
+  display: flex;
+  overflow-x: hidden;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.scrollContent {
+  display: flex;
+  animation: scroll 30s linear infinite alternate;
+  will-change: transform;
+}
+
+.item {
+  justify-content: center;
+  display: inline-block;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid rgba(255, 255, 255, 0.1) 2px;
+  width: 40rem;
+  flex: 0 0 auto;
+  margin-right: 2rem;
+  padding: 4rem 3rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: 300ms ease;
+}
+
+.item:hover {
+  box-shadow: 0 0 30rem 3rem black;
+  scale: 1.05;
+  border: solid rgba(255, 255, 255, 1) 2px;
+  transition: 300ms ease;
+}
+
+.bintangContainer {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+.bintang {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nama {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+  .titleContainer {
+    margin-bottom: 5rem;
+  }
+  .item {
+    border-radius: 1rem;
+    width: 40rem;
+    flex: 0 0 auto;
+    margin-right: 2rem;
+    padding: 3rem 3rem;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+  .titleContainer {
+    margin-bottom: 5rem;
+  }
+  .item {
+    border-radius: 1rem;
+    width: 30rem;
+    flex: 0 0 auto;
+    margin-right: 2rem;
+    padding: 2rem 2rem;
+    gap: 1.5rem;
+    height: auto;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+
+  .nama {
+    font-size: 1rem;
+  }
+}
