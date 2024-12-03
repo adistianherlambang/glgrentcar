@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "./nav.module.css";
 import logo from "/public/logo.png";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,14 +24,14 @@ const Navbar = () => {
         />
       </div>
       <ul className={styles.link}>
-        <li><a href="/" className={styles.isi}><p className={styles.text}>Home</p></a></li>
-        <li><a href="/" className={styles.isi}><p className={styles.text}>Tentang Kami</p></a></li>
-        <li><a href="/" className={styles.isi}><p className={styles.text}>Armada</p></a></li>
-        <li><a href="/" className={styles.isi}><p className={styles.text}>Blog</p></a></li>
+        <li><Link href="/" className={styles.isi}><p className={styles.text}>Home</p></Link></li>
+        <li><Link href="/" className={styles.isi}><p className={styles.text}>Tentang Kami</p></Link></li>
+        <li><Link href="/" className={styles.isi}><p className={styles.text}>Armada</p></Link></li>
+        <li><Link href="/" className={styles.isi}><p className={styles.text}>Blog</p></Link></li>
       </ul>
 
       <div className={styles.hamburgerWrapper} onClick={toggleMenu}>
-        <div
+        <div    
           className={`${styles.hamburger} ${isMenuOpen ? styles.active : ""}`}
         >
           <div className={styles.line}></div>
@@ -40,10 +41,10 @@ const Navbar = () => {
       </div>
 
       <ul className={`${styles.navLinks} ${isMenuOpen ? styles.active : ""}`}>
-        <li><a href="/" className={styles.navLink}><p className={styles.text}>Beranda</p></a></li>
-        <li><a href="/" className={styles.navLink}><p className={styles.text}>Tentang Kami</p></a></li>
-        <li><a href="/" className={styles.navLink}><p className={styles.text}>Armada</p></a></li>
-        <li><a href="/" className={styles.navLink}><p className={styles.text}>Blog</p></a></li>
+        <li><Link href="/" className={styles.navLink}><p className={styles.text}>Beranda</p></Link></li>
+        <li><Link href="/" className={styles.navLink}><p className={styles.text}>Tentang Kami</p></Link></li>
+        <li><Link href="/" className={styles.navLink}><p className={styles.text}>Armada</p></Link></li>
+        <li><Link href="/" className={styles.navLink}><p className={styles.text}>Blog</p></Link></li>
       </ul>
     </nav>
   );

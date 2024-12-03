@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
 import styles from "./tentangKami.module.css"
 import AOSComponent from "../components/AOS/AOS"
 import Footer from "../components/footer/footer"
