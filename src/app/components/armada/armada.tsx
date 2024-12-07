@@ -3,7 +3,6 @@ import styles from "./armada.module.css"
 import Image from "next/image";
 import Link from "next/link";
 
-import honda from "/public/homeAsset/honda.jpg"
 import hiaceCommuter from "/public/homeAsset/armada/hiaceCommuter.jpg"
 import alphard from "/public/homeAsset/armada/alphard.jpg"
 import pajero from "/public/homeAsset/armada/pajero.jpg"
