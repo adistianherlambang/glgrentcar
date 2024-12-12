@@ -25,9 +25,9 @@ const Navbar = () => {
       </div>
       <ul className={styles.link}>
         <li><Link href="/" className={styles.isi}><p className={styles.text}>Home</p></Link></li>
-        <li><Link href="/" className={styles.isi}><p className={styles.text}>Tentang Kami</p></Link></li>
-        <li><Link href="/" className={styles.isi}><p className={styles.text}>Armada</p></Link></li>
-        <li><Link href="/" className={styles.isi}><p className={styles.text}>Blog</p></Link></li>
+        <li><Link href="/tentang-kami" className={styles.isi}><p className={styles.text}>Tentang Kami</p></Link></li>
+        <li><Link href="/armada" className={styles.isi}><p className={styles.text}>Armada</p></Link></li>
+        <li><Link href="/blog" className={styles.isi}><p className={styles.text}>Blog</p></Link></li>
       </ul>
 
       <div className={styles.hamburgerWrapper} onClick={toggleMenu}>
