@@ -81,7 +81,7 @@ export default function Home() {
               alt="smoke"
             />
           </div>
-          <p className={styles.headerTitle}>SEW MOBIL TERBAIK <br/> DI LAMPUNG</p>
+          <p className={styles.headerTitle}>SEWA MOBIL TERBAIK <br/> DI LAMPUNG</p>
           <div className={styles.headerImgContainer} >
             <Image
               className={styles.headerImg}
